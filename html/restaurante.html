@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sabor Canario</title>
+    <link rel="stylesheet" href="../css/custom.css">
+    <link href="../style/carousel.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <div class="container-fluid slave-bg bg-image p-0">
+        <header>
+            <div
+                class="linksLanguage d-xl-flex d-lg-flex d-md-none d-sm-none d-none justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between">
+                <div class="d-flex">
+                    <button class="btn" onclick="toggleLanguage('Español')"><a class="text-decoration-none text-white"
+                            href="#">Español</a></button>
+                    <button class="btn" onclick="toggleLanguage('English')"><a class="text-decoration-none text-white"
+                            href="#">English</a></button>
+                </div>
+                <div class="d-xl-flex d-lg-flex d-md-flex d-sm-none align-items-center">
+                    <div class="me-3">
+                        <a class="text-decoration-none text-white" id="transContact"
+                            href="mailto:info@hotelruralorotava.es"><i
+                                class="far fa-envelope-open me-1"></i>Contacta</a>
+                    </div>
+                    <div class="me-3">
+                        <a class="text-decoration-none text-white" id="transFind"
+                            href="https://goo.gl/maps/i3DLVeCKVow1m9SN9" target="_blank"><i
+                                class="far fa-map me-1"></i>Como
+                            encontrarnos</a>
+                    </div>
+                    <div class="me-3">
+                        <a class="text-decoration-none text-white" id="transPhone" href="tel:+34922322793"><i
+                                class="fas fa-mobile-alt me-1"></i>Teléfono</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-xl-none d-lg-none">
+                <div class="topnav" id="myTopnav">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars text-white"></i>
+                    </a>
+                    <button class="btn active" onclick="toggleLanguage('Español')"><a
+                            class="text-decoration-none text-white" href="#">Español</a></button>
+                    <button class="btn active" onclick="toggleLanguage('English')"><a
+                            class="text-decoration-none text-white" href="#">English</a></button>
+                    <a class="nav-link text-white" id="transMenu1" href="../index.html">Hotel</a>
+                    <a class="nav-link text-white" id="transMenu2" href="../html/restaurante.html">Restaurante</a>
+                    <!-- <a class="nav-link text-white" id="transMenu3" href="html/entorno.html">Entorno</a> -->
+                </div>
+            </div>
+            <div
+                class="menuLogo mt-4 d-none d-xl-flex d-lg-flex d-md-none d-sm-none justify-content-sm-around justify-content-md-around justify-content-lg-around">
+                <div class="w-25">
+                    <a href=""><img src="../images/logotransp.jpg" width="160" height="160"></a>
+                </div>
+                <div class="d-flex pt-5 w-25">
+                    <div class="nav-item">
+                        <a class="nav-link text-white" id="transMenu1" href="../index.html">Hotel</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link text-white" id="transMenu2" href="../html/restaurante.html">Restaurante</a>
+                    </div>
+                    <!-- <div class="nav-item">
+                            <a class="nav-link text-white" id="transMenu3" href="../html/entorno.html">Entorno</a>
+                        </div> -->
+                </div>
+            </div>
+        </header>
+        <div class="text-center w-50 mx-auto text-white" style="margin-top: 18vh;">
+            <h1 id="transRtTitle">Restaurante <br> Sabor Canario</h1>
+            <div class="text-center">
+                <p id="transRtSubTitle">Comida típica Canaria y Española</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="" style="margin-top: 10vh;">
+            <div class="d-flex justify-content-center">
+                <div class="d-inline-block text-secondary">
+                    <h2 id="transRtYummyTitle" class="load-hidden scrollReveal">Para comer</h2>
+                    <hr class="text-center mx-auto w-75">
+                </div>
+            </div>
+            <div class="w-75 mx-auto text-center mt-5 mb-5">
+                <p class="load-hidden scrollReveal" id="transRtYummy">La cocina es dirigida por uno de los propietarios,
+                    en la cuál se elaboran recetas tradicionales con el mejor género del mercado.</p>
+            </div>
+        </div>
+        <div class="load-hidden scrollReveal container-fluid">
+            <div class="row">
+                <div class="col-lg-12 p-0">
+                    <div class="rescarousel" data-items="2,4,5,6" data-slide="1">
+                        <div class="rescarousel-inner">
+                            <div class="item">
+                                <div class="innerItem">
+                                    <div class="imageCarousel">
+                                        <img src="../images/papas.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="innerItem">
+                                    <div class="imageCarousel">
+                                        <img src="../images/papasRellenas.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="innerItem">
+                                    <div class="imageCarousel">
+                                        <img src="../images/codillo.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="innerItem">
+                                    <div class="imageCarousel">
+                                        <img src="../images/comidasMesa.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="innerItem">
+                                    <div class="imageCarousel">
+                                        <img src="../images/quesoAsado.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-default leftlst" style="margin-top: 100px;">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn-default rightlst" style="margin-top: 100px;">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-fluid mb-3">
+        <div class="" style="margin-top: 10vh;">
+            <div class="w-25 mb-5 mx-auto text-center text-secondary">
+                <h2 class="load-hidden scrollReveal" id="transRtMenu">Nuestra carta</h2>
+                <hr class="w-50 mx-auto">
+            </div>
+            <div class="load-hidden scrollReveal cartaMenu row mx-auto pt-3" style="max-width: 80vw;">
+                <div class="row col-12 col-xl-6 col-lg-12 col-md-12 col-sm-12 g-0">
+                    <div class="row col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 g-0 mb-5">
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 d-flex justify-content-center">
+                            <img src="../images/quesoAsado.jpg" width="90" height="90">
+                        </div>
+                        <div class="col-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 ps-4">
+                            <h5 id="foodTitle11">QUESO ASADO</h5>
+                            <p id="foodDescrip11">Queso ahumado a la plancha con mojo y gofio</p>
+                        </div>
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
+                            <p>8.50€</p>
+                        </div>
+                    </div>
+                    <div class="row col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 g-0 mb-5">
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 d-flex justify-content-center">
+                            <img src="../images/papasRellenas.jpg" width="90" height="90">
+                        </div>
+                        <div class="col-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 ps-4">
+                            <h5 id="foodTitle21">PAPAS RELLENAS</h5>
+                            <p id="foodDescrip21">Papas rellenas de carne en salsa.</p>
+                        </div>
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
+                            <p>9.00€</p>
+                        </div>
+                    </div>
+                    <div class="row col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 g-0 mb-5">
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 d-flex justify-content-center">
+                            <img src="../images/codillo.jpg" width="90" height="90">
+                        </div>
+                        <div class="col-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 ps-4">
+                            <h5 id="foodTitle31">CODILLO AL HORNO</h5>
+                            <P id="foodDescrip31">Codillo al horno acompañador de papas panaderas.</P>
+                        </div>
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
+                            <p>15.00€</p>
+                        </div>
+                    </div>
+                    <div class="row col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 g-0 mb-5">
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 d-flex justify-content-center">
+                            <img src="../images/papas.jpg" width="90" height="90">
+                        </div>
+                        <div class="col-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 ps-4">
+                            <h5 id="foodTitle41">PAPAS ARRUGADAS</h5>
+                            <p id="foodDescrip41">Papas arrugadas con mojo rojo y verde.</p>
+                        </div>
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
+                            <p>5.50€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-12 col-xl-6 col-lg-12 col-md-12 col-sm-12 g-0">
+                    <div class="row col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 g-0 mb-5">
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 d-flex justify-content-center">
+                            <img src="../images/quesoAsado.jpg" width="90" height="90">
+                        </div>
+                        <div class="col-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 ps-4">
+                            <h5 id="foodTitle12">QUESO ASADO</h5>
+                            <p id="foodDescrip12">Queso ahumado a la plancha con mojo y gofio</p>
+                        </div>
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
+                            <p>8.50€</p>
+                        </div>
+                    </div>
+                    <div class="row col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 g-0 mb-5">
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 d-flex justify-content-center">
+                            <img src="../images/quesoAsado.jpg" width="90" height="90">
+                        </div>
+                        <div class="col-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 ps-4">
+                            <h5 id="foodTitle22">QUESO ASADO</h5>
+                            <p id="foodDescrip22">Queso ahumado a la plancha con mojo y gofio</p>
+                        </div>
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
+                            <p>8.50€</p>
+                        </div>
+                    </div>
+                    <div class="row col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 g-0 mb-5">
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 d-flex justify-content-center">
+                            <img src="../images/quesoAsado.jpg" width="90" height="90">
+                        </div>
+                        <div class="col-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 ps-4">
+                            <h5 id="foodTitle32">QUESO ASADO</h5>
+                            <p id="foodDescrip32">Queso ahumado a la plancha con mojo y gofio</p>
+                        </div>
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
+                            <p>8.50€</p>
+                        </div>
+                    </div>
+                    <div class="row col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 g-0 mb-5">
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 d-flex justify-content-center">
+                            <img src="../images/quesoAsado.jpg" width="90" height="90">
+                        </div>
+                        <div class="col-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 ps-4">
+                            <h5 id="foodTitle42">QUESO ASADO</h5>
+                            <p id="foodDescrip42">Queso ahumado a la plancha con mojo y gofio</p>
+                        </div>
+                        <div class="col-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
+                            <p>8.50€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container-fluid mt-5">
+        <div class="d-flex justify-content-center">
+            <div class="d-inline-block text-secondary">
+                <h2 class="load-hidden scrollReveal" id="transEventsTitle">Eventos y celebraciones</h2>
+                <hr class="text-center mx-auto w-75">
+            </div>
+        </div>
+        <div class="w-75 mx-auto text-center mt-5 mb-5">
+            <p class="load-hidden scrollReveal" id="transEvents">Celebramos todo tipo de eventos, consúltanos para
+                conocer nuestras posibilidades.</p>
+        </div>
+    </div>
+    <div class="load-hidden scrollReveal formQuestions mx-auto row pt-5 pb-5 rounded">
+        <div class="text-center mb-3">
+            <div class="d-sm-none d-inline-block text-secondary">
+                <h2 class="load-hidden scrollReveal" id="transDoubs">¿Dudas?</h2>
+                <hr class="text-center mx-auto" style="width: 10vh;">
+            </div>
+        </div>
+        <div class="inner col-12 col-xl-6 col-md-6 w-50 d-flex justify-content-center align-items-center">
+            <div class="h-75 text-center d-flex flex-column justify-content-lg-around">
+                <div class="mb-5">
+                    <h4 class="text-secondary" id="transRtQuestion1">Llámanos<i class="fas fa-phone ps-3"></i></h4>
+                </div>
+                <div class="mb-5">
+                    <h4 class="text-secondary" id="transRtQuestion2">Envianos un email<i class="fas fa-at ps-3"></i>
+                    </h4>
+                </div>
+                <div class="mb-5">
+                    <h4 class="text-secondary" id="transRtQuestion3">Pásate y hablamos<i
+                            class="fas fa-user-friends ps-3"></i></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-6 col-md-6 w-50 h-100 d-flex align-items-center justify-content-center">
+            <form action="/sendRestaurant.php" method="post">
+                <div class="mx-auto">
+                    <div class="pe-3 mb-4">
+                        <input class="form-control" for="name" name="name" type="text" placeholder="Nombre">
+                    </div>
+                    <div class="pe-3 mb-4">
+                        <input class="form-control" for="email" name="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="pe-3 mb-4">
+                        <input class="form-control" for="phone" name="phone" type="phone" placeholder="Teléfono">
+                    </div>
+                    <div class="pe-3 mb-4">
+                        <textarea class="form-control" name="comments" rows="4" cols="60"
+                            id="transRtForm1">Escribir aqui...</textarea>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" type="submit" id="transRtForm2">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="load-hidden scrollReveal">
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-inline-block">
+                            <h3 class="text-center" id="transFooter1">Contacto</h3>
+                            <hr class="mx-auto w-50">
+                        </div>
+                    </div>
+                    <div class="ps-4 mt-5 d-flex flex-column align-items-center">
+                        <div class="">
+                            <div class="">
+                                <a class="text-decoration-none text-secondary" href="mailto:info@hotelruralorotava.es"
+                                    target="_blank"><i
+                                        class="far fa-envelope-open me-3"></i>info@hotelruralorotava.com</a>
+                            </div>
+                            <div class="mt-3">
+                                <a class="text-decoration-none text-secondary"
+                                    href="https://goo.gl/maps/i3DLVeCKVow1m9SN9" target="_blank" id="transFooter12"><i
+                                        class="far fa-map me-3"></i>Localización</a>
+                            </div>
+                            <div class="mt-3">
+                                <a class="text-decoration-none text-secondary" href="tel:+34922322793"><i
+                                        class="fas fa-mobile-alt me-3"></i>+34
+                                    922
+                                    32 27 93</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-inline-block">
+                            <h3 class="text-center" id="transSocial">Conectate</h3>
+                            <hr class="mx-auto w-50">
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex mt-5 justify-content-center">
+                        <div class="me-4"><a href="https://es-es.facebook.com/sabor.canario/" target="_blank"><i
+                                    class="fs-4 fab fa-facebook-square text-dark"></i></a></div>
+                        <div class="ms-4"><a href="https://www.instagram.com/saborcanario/?hl=en" target="_blank"><i
+                                    class="fs-4 fab fa-instagram text-dark"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-inline-block">
+                            <h3 class="text-center" id="transSocial1">Tarjetas</h3>
+                            <hr class="mx-auto w-50">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <div class="border border-secondary me-3 px-2 py-1 d-flex align-items-center">
+                            <p class="mb-0">Visa</p>
+                        </div>
+                        <div class="border border-secondary me-3 px-2 d-flex align-items-center">
+                            <p class="mb-0">PayPal</p>
+                        </div>
+                        <div class="border border-secondary px-2 d-flex align-items-center">
+                            <p class="mb-0">MasterCard</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="registered d-flex text-center justify-content-sm-end me-sm-5">
+            <p class="fw-lighter text-secondary" id="transRegistered">&regEsta web ha sido desarrollada por <a
+                    class="text-decoration-none text-dark" href="https://WebsiWebs.es">WebsiWebs</a> con cariño, HTML,
+                CSS y JS.</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/carousel.js"></script>
+    <script src="https://widget.siteminder.com/ibe.min.js"></script>
+    <script type="text/javascript" src="../js/LanguageRestaurant.js"></script>
+    <script type="text/javascript" src="../js/scrollReveal.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>

@@ -1,0 +1,294 @@
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+$fa-font-path:        "../node_modules/@fortawesome/fontawesome-free/webfonts";
+
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular';
+
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+.main-bg {
+  height: 100vh;
+  background: url("/images/hotelEntrada.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header .nav-item {
+  font-size: 1.4rem;
+}
+header .linksLanguage {
+  height: 5vh;
+  font-size: 1rem;
+  background-color: rgba(88, 88, 88, 0.3);
+}
+.linksLanguage button:hover {
+  opacity: 0.8;
+}
+.menuLogo .nav-item a:hover {
+  opacity: 0.8;
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgba(88, 88, 88, 0.3);
+}
+.topnav a {
+  padding: 6px 7px;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:not(:first-child) {
+  display: none;
+}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+.topnav.responsive {
+  position: relative;
+}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+h1 {
+  font-family: "Uchen", serif;
+}
+.btnAvailable:hover {
+  background: #e6e6e6;
+}
+.containerForm input,
+select {
+  width: 190px !important;
+  margin: auto;
+}
+.hideContent2 {
+  overflow: hidden;
+  height: 45vh;
+}
+.showContent {
+  height: auto;
+}
+.comments,
+.keyDates,
+.clientsRates .inner,
+.formQuestions {
+  background-color: #f2f2f2;
+}
+.textOverImg {
+  position: relative;
+  overflow: hidden;
+}
+.textOverImg img {
+  height: 100%;
+  transition: transform 1s;
+}
+.textOverImg .text {
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0;
+  top: 50%;
+  bottom: auto;
+  left: 50%;
+  right: auto;
+  color: #fff;
+}
+.textOverImg:hover .text {
+  opacity: 0.8;
+}
+.textOverImg:hover img {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+}
+.clientRate {
+  background: lightcoral;
+}
+.cover {
+  width: 100%;
+  object-fit: cover;
+}
+.doubsForm {
+  width: 80%;
+}
+.doubsForm input,
+textarea {
+  width: 80% !important;
+  margin: auto;
+}
+.registered {
+  margin-top: 80px;
+}
+.registered > p {
+  font-size: 1.1rem;
+}
+.containerForm {
+  width: 90%;
+}
+
+/* Extra small devices (phones, 280px - 411px) */
+@media only screen and (min-width: 280px) and (max-width: 567px) {
+  .main-bg {
+    height: 100vh;
+    background: url("../images/pasilloFix.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .containerForm button {
+    margin-top: 30px !important;
+    margin: auto;
+  }
+  .mainTitle {
+    margin-top: 10% !important;
+    width: 70vw;
+    margin: auto;
+  }
+  .registered > p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 568px - 895px) */
+@media only screen and (min-width: 568px) and (max-width: 896px) {
+  .main-bg {
+    height: 100vh;
+    background: url("../images/escalera.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .mainTitle {
+    margin-top: 6% !important;
+  }
+  .registered > p {
+    font-size: 0.9rem;
+  }
+}
+
+/*ipad*/
+@media only screen and (min-width: 768px) and (height: 1024px) {
+  .main-bg {
+    height: 100vh;
+    background: url("../images/hotelEntrada.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .menuLogo {
+    display: flex !important;
+  }
+  .menuMobile {
+    display: none !important;
+  }
+  .linksLanguage {
+    display:flex !important;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+ form {
+   margin-top: 30px;
+ } 
+}
+
+/*ipadPro*/
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+.mainTitle {
+  margin-top: 110px !important;
+}
+  .containerForm {
+    margin-top: 50px !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .containerForm {
+    width: 50%;
+  }
+  h1 {
+    font-size: 2.7rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+/*restaurant html*/
+
+.slave-bg {
+  height: 100vh;
+  background: url("../images/papas.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.cartaMenu h5 {
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-size: 19px;
+}
+.cartaMenu p {
+  font-family: "Quicksand", sans-serif;
+  color: grey;
+  font-size: 16px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .cartaMenu h5 {
+    font-family: "Quicksand", sans-serif;
+    color: black;
+    font-size: 16px;
+  }
+  .cartaMenu p {
+    font-family: "Quicksand", sans-serif;
+    color: grey;
+    font-size: 14px;
+  }
+  .cartaMenu img {
+    width: 70px;
+    height: 70px;
+  }
+}
+.formQuestions .inner {
+  display: none !important;
+}
+.formQuestions div {
+  width: 100% !important;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .formQuestions .inner {
+    display: flex !important;
+  }
+}
